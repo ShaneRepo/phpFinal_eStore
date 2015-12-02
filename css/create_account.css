@@ -179,8 +179,9 @@ input {
     margin-bottom: 1em;
 }
 #button {
-    width: 7em;
+    width: 8em;
     margin-left: 6em;
+    padding: .5em;
     background-color: orange;
     border-color: black;
 }
