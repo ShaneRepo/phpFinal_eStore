@@ -1,0 +1,190 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+html {
+    background: url("../images/bats.gif") repeat;
+}
+#navTop {
+    width: 100%;
+    display: block;
+    clear: both;
+}
+#navTop ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    position: relative;
+}
+#navTop ul li {
+    float: left;
+}
+#navTop ul li a {
+    text-align: center;
+    display: block;
+    padding: 1em 0;
+    width: 152px;
+    text-decoration: none;
+    background-color: black;
+    color: white;
+    font-weight: bold;
+}
+#navTop ul ul {
+    display: none;
+    position: absolute;
+    top: 100%;
+}
+#navTop ul ul li {
+    float: none;
+    position: relative;
+}
+#navTop ul ul li ul {
+    position: absolute;
+    left: 100%;
+    top: 0;
+}
+#navTop ul li.lastItem ul li ul {
+    position: absolute;
+    left: -100%;
+    top: 0;
+}
+#navTop ul li.lastItem a {
+    width: 154px;
+}
+#navTop ul li a:hover, #navTop ul li a:focus {
+    background-color: gray;
+}
+#navTop ul li a.current {
+    color: orange;
+}
+#navTop ul li:hover > ul {
+    display: block;
+}
+#navTop > ul::after {
+    content: "";
+    display: block;
+    clear: both;
+}
+#navLeft ul {
+    list-style-type: none;
+    margin-left: 1.25em;
+    margin-bottom: 1.5em;
+}
+#navLeft ul li {
+    width: 100px;
+    margin-bottom: .5em;
+    border: 2px solid black;
+}
+#navLeft ul li a {
+    display: block;
+    padding: .5em .5em .5em .5em;
+    text-decoration: none;
+    font-weight: bold;
+    color: black;
+    background-color: orange;
+}
+aside {
+    width: 160px;
+    float: left;
+    padding-top: 1em;
+    padding-right: .25em;
+}
+header {
+    background: -webkit-linear-gradient(45deg,white,orange 75%,black);
+    background: -moz-linear-gradient(45deg,white,orange 75%,black);
+    background: -o-linear-gradient(45deg,white,orange 75%,black);
+    padding-bottom: 1em;
+    border-bottom: 2px solid black;
+}
+footer {
+    background: -webkit-linear-gradient(45deg,black,orange 75%,white);
+    background: -moz-linear-gradient(45deg,black,orange 75%,white);
+    background: -o-linear-gradient(45deg,black,orange 75%,white);
+    padding-bottom: 1em;
+    padding-top: 1em;
+    margin-top: 1em;
+    border-top: 2px solid black;
+    clear: both;
+}
+body {
+    width: 762px;
+    margin: 1em auto;
+    background-color: white;
+    border: 3px solid black;
+    box-shadow: 3px 3px 4px 4px black;
+}
+main h2 {
+    margin-top: .50em;
+}
+main {
+    width: 550px;
+    height: 525px;
+    float: right;
+    padding: 1em;
+}
+main a {
+    padding: .25em .75em;
+}
+main img {
+    padding: .25em .75em;
+}
+p{
+    padding: .25em .75em;
+}
+h1, h2, h3 {
+    padding: .25em .75em;
+    font-size: 110%;
+}
+/*h1::first-letter {
+    font-size: 200%;
+}*/
+
+header img {
+    float: left;
+}
+header h2 {
+    text-indent: 0.5em;
+    font-size: 200%;
+}
+header h3 {
+    text-indent: 0.5em;
+}
+
+footer p {
+    font-size: 80%;
+    text-align: center;
+}
+ul {
+    line-height: 20px;
+    margin-top: 25px;
+    margin-left: 2.5em;
+}
+a {
+    color: orange;
+    font-weight: bold;
+}
+a:hover, a:focus {
+    color: green;
+}
+label {
+    float: left;
+    width: 5em;
+    text-align: right;
+}
+input {
+    width: 50%;
+    margin-left: 1em;
+    margin-bottom: 1em;
+}
+#button {
+    width: 7em;
+    margin-left: 6em;
+    background-color: orange;
+    border-color: black;
+}
+#title {
+    font-weight: bold;
+    font-size: 125%;
+}
