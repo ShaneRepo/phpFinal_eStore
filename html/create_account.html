@@ -21,10 +21,10 @@
 </header>
 <nav id="navTop">
     <ul>
-        <li><a href="index.html" class="current">Home</a> </li>
+        <li><a href="index.html">Home</a> </li>
         <li><a href="index.html">Product List</a> </li>
         <li><a href="index.html">Personal</a> </li>
-        <li><a href="index.html">Account</a>
+        <li><a href="index.html" class="current">Account</a>
             <ul>
                 <li><a href="log_in.html">Log In</a> </li>
                 <li><a href="create_account.html">Create Account</a> </li>
@@ -42,9 +42,9 @@
         </h1>
         <form name="email" action="../php/create_account.php" method="post">
             <label for="first_name">First name:</label>
-            <input type="text" name="firstname" id="first_name" placeholder="First name" required autofocus><br>
+            <input type="text" name="first_name" id="first_name" placeholder="First name" required autofocus><br>
             <label for="last_name">Last name:</label>
-            <input type="text" name="lastname" id="last_name" placeholder="Last name" required ><br>
+            <input type="text" name="last_name" id="last_name" placeholder="Last name" required ><br>
             <label for="email">Email:</label>
             <input type="email" name="email" id="email" placeholder="yourEmail@example.com" required ><br>
             <label for="pass1">Password:</label>

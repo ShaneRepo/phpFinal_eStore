@@ -21,10 +21,10 @@
 </header>
 <nav id="navTop">
     <ul>
-        <li><a href="../html/index.html" class="current">Home</a> </li>
+        <li><a href="../html/index.html">Home</a> </li>
         <li><a href="../html/index.html">Product List</a> </li>
         <li><a href="../html/index.html">Personal</a> </li>
-        <li><a href="../html/index.html">Account</a>
+        <li><a href="../html/index.html" class="current">Account</a>
             <ul>
                 <li><a href="../html/log_in.html">Log In</a> </li>
                 <li><a href="../html/create_account.html">Create Account</a> </li>
@@ -37,7 +37,7 @@
 </nav>
 <main>
     <section>
-        <h1 id="title">
+
             <?php
             // Check for form submission:
             if ($_SERVER['REQUEST_METHOD'] == 'POST') {
@@ -119,7 +119,7 @@
             }
 
             ?>
-        </h1>
+
 
     </section>
 </main>
