@@ -1,42 +1,4 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>Halloween Store</title>
-    <link rel="shortcut icon" href="../images/favicon.ico">
-    <link rel="stylesheet" href="../css/normalize.css">
-    <link rel="stylesheet" href="../css/create_account.css">
-</head>
-<body>
-<header>
-    <picture>
-        <img src="../images/pumpkin.gif" alt="Pumpkin logo">
-    </picture>
-    <h2>
-        The Halloween Store
-    </h2>
-    <h3>
-        For the little Goblin in all of us!
-    </h3>
-</header>
-<nav id="navTop">
-    <ul>
-        <li><a href="../html/index.html">Home</a> </li>
-        <li><a href="../html/index.html">Product List</a> </li>
-        <li><a href="../html/index.html">Personal</a> </li>
-        <li><a href="../html/index.html" class="current">Account</a>
-            <ul>
-                <li><a href="../html/log_in.html">Log In</a> </li>
-                <li><a href="../html/create_account.html">Create Account</a> </li>
-                <li><a href="../html/index.html">Cart</a> </li>
-                <li><a href="../html/index.html">Log Out</a> </li>
-            </ul>
-        </li>
-        <li class="lastItem"><a href="../html/index.html">Join Email</a> </li>
-    </ul>
-</nav>
-<main>
-    <section>
+
 
             <?php
             // Check for form submission:
@@ -90,6 +52,7 @@
                         // Print a message:
                         echo '<h1>Thank you!</h1>
 		<p>You are now registered and can log in!</p><p><br /></p>';
+                        echo '<li><a href="../html/log_in.html">Log In</a> </li>';
 
                     } else { // If it did not run OK.
 
@@ -103,8 +66,6 @@
                     } // End of if ($r) IF.
 
                     mysqli_close($dbc); // Close the database connection.
-
-
                     exit();
 
                 } else { // Report the errors.
@@ -119,7 +80,45 @@
             }
 
             ?>
-
+            <!DOCTYPE html>
+            <html lang="en">
+            <head>
+                <meta charset="UTF-8">
+                <title>Halloween Store</title>
+                <link rel="shortcut icon" href="../images/favicon.ico">
+                <link rel="stylesheet" href="../css/normalize.css">
+                <link rel="stylesheet" href="../css/create_account.css">
+            </head>
+            <body>
+            <header>
+                <picture>
+                    <img src="../images/pumpkin.gif" alt="Pumpkin logo">
+                </picture>
+                <h2>
+                    The Halloween Store
+                </h2>
+                <h3>
+                    For the little Goblin in all of us!
+                </h3>
+            </header>
+            <nav id="navTop">
+                <ul>
+                    <li><a href="../html/index.html">Home</a> </li>
+                    <li><a href="../html/index.html">Product List</a> </li>
+                    <li><a href="../html/index.html">Personal</a> </li>
+                    <li><a href="../html/index.html" class="current">Account</a>
+                        <ul>
+                            <li><a href="../html/log_in.html">Log In</a> </li>
+                            <li><a href="../html/create_account.html">Create Account</a> </li>
+                            <li><a href="../html/index.html">Cart</a> </li>
+                            <li><a href="../html/index.html">Log Out</a> </li>
+                        </ul>
+                    </li>
+                    <li class="lastItem"><a href="../html/index.html">Join Email</a> </li>
+                </ul>
+            </nav>
+            <main>
+                <section>
 
     </section>
 </main>
