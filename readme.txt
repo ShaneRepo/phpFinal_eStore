@@ -29,11 +29,11 @@ CREATE TABLE products222 (
   PRIMARY KEY (product_id)
 );
 
-INSERT INTO products222 (name, description, price) VALUES
-'cat', 'a cat stuffed animal', '15.00',
-'bats', 'flying bats figure', '25.00',
-'pumpkin', 'fake pumpkin', '35.00',
-'rat', 'a rat stuffed animal', '45.00',
-'strobe', 'a strobe light', '55.00',
+INSERT INTO products222 (product_id, name, description, price) VALUES
+(NULL,'cat', 'a cat stuffed animal', '15.00'),
+(NULL,'bats', 'flying bats figure', '25.00'),
+(NULL,'pumpkin', 'fake pumpkin', '35.00'),
+(NULL,'rat', 'a rat stuffed animal', '45.00'),
+(NULL,'strobe', 'a strobe light', '55.00');
 
 ------------------------------------------------------------
