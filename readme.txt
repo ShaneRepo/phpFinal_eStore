@@ -1,5 +1,7 @@
 This file will outline a few things about the project.
 ------------------------------------------------------
+USER'S TABLE
+------------------------------------------------------
 CREATE TABLE users222 (
 user_id MEDIUMINT UNSIGNED NOT NULL AUTO_INCREMENT,
 first_name VARCHAR(20) NOT NULL,
@@ -17,6 +19,8 @@ INSERT INTO users222 (first_name, last_name, email, pass, registration_date) VAL
 ('Ringo', 'Starr', 'ringo@beatles.com', SHA1('thisboy'), NOW());
 
 -------------------------------------------------------
+PRODUCT'S TABLE
+-------------------------------------------------------
 CREATE TABLE products222 (
   product_id MEDIUMINT UNSIGNED NOT NULL AUTO_INCREMENT,
   name varchar(100) NOT NULL,
@@ -31,3 +35,5 @@ INSERT INTO products222 (name, description, price) VALUES
 'pumpkin', 'fake pumpkin', '35.00',
 'rat', 'a rat stuffed animal', '45.00',
 'strobe', 'a strobe light', '55.00',
+
+------------------------------------------------------------
