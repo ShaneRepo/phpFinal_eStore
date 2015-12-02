@@ -21,18 +21,18 @@
 </header>
 <nav id="navTop">
     <ul>
-        <li><a href="../html/index.html">Home</a> </li>
+        <li><a href="../html/index.html" class="current">Home</a> </li>
         <li><a href="../html/index.html">Product List</a> </li>
         <li><a href="../html/index.html">Personal</a> </li>
-        <li><a href="../html/index.html">Decorating Ideas</a>
+        <li><a href="../html/index.html">Account</a>
             <ul>
-                <li><a href="../html/index.html">Outdoor</a> </li>
-                <li><a href="../html/index.html">Indoor</a> </li>
-                <li><a href="../html/index.html">Table</a> </li>
-                <li><a href="../html/index.html">Treats</a> </li>
+                <li><a href="../html/log_in.html">Log In</a> </li>
+                <li><a href="../html/create_account.html">Create Account</a> </li>
+                <li><a href="../html/index.html">Cart</a> </li>
+                <li><a href="../html/index.html">Log Out</a> </li>
             </ul>
         </li>
-        <li class="lastItem"><a href="../html/index.html" class="current">Join Email</a> </li>
+        <li class="lastItem"><a href="../html/index.html">Join Email</a> </li>
     </ul>
 </nav>
 <main>
