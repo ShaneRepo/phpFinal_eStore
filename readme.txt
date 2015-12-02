@@ -26,7 +26,7 @@ CREATE TABLE products222 (
   name varchar(100) NOT NULL,
   description varchar(250) NOT NULL,
   price decimal(6,2) NOT NULL,
-  PRIMARY KEY (id_product)
+  PRIMARY KEY (product_id)
 );
 
 INSERT INTO products222 (name, description, price) VALUES
