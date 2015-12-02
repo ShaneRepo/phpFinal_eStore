@@ -3,8 +3,68 @@
 <head>
     <meta charset="UTF-8">
     <title>Log In</title>
+    <link rel="stylesheet" href="../css/normalize.css">
+    <link rel="stylesheet" href="../css/create_account.css">
 </head>
 <body>
+<header>
+    <picture>
+        <img src="../images/pumpkin.gif" alt="Pumpkin logo">
+    </picture>
+    <h2>
+        The Halloween Store
+    </h2>
+    <h3>
+        For the little Goblin in all of us!
+    </h3>
+</header>
+<nav id="navTop">
+    <ul>
+        <li><a href="../html/index.html">Home</a> </li>
+        <li><a href="../html/index.html">Product List</a> </li>
+        <li><a href="../html/index.html">Personal</a> </li>
+        <li><a href="../html/index.html">Decorating Ideas</a>
+            <ul>
+                <li><a href="../html/index.html">Outdoor</a> </li>
+                <li><a href="../html/index.html">Indoor</a> </li>
+                <li><a href="../html/index.html">Table</a> </li>
+                <li><a href="../html/index.html">Treats</a> </li>
+            </ul>
+        </li>
+        <li class="lastItem"><a href="../html/index.html" class="current">Join Email</a> </li>
+    </ul>
+</nav>
+<main>
+    <section>
+        <h1 id="title">
+            Please enter the following information.
+        </h1>
+        <form name="email" action="subscribe.html" method="post">
+            <label for="firstname">First name:</label>
+            <input type="text" name="firstname" id="firstname" required autofocus><br>
+            <label for="lastname">Last name:</label>
+            <input type="text" name="lastname" id="lastname" required ><br>
+            <label for="email">Email:</label>
+            <input type="email" name="email" id="email" required ><br>
+            <label for="zipcode">Zipcode:</label>
+            <input type="text" name="zipcode" id="zipcode" placeholder="Optional but appreciated: 99999" pattern="\d{5}([\-]\d{4})?"><br>
+            <input type="submit" name="submit" id="button"  value="Subscribe">
 
+        </form>
+    </section>
+</main>
+<nav id="navLeft">
+    <aside>
+        <ul>
+            <li><a href="index.html">Pictures</a></li>
+            <li><a href="index.html">Home Videos</a></li>
+            <li><a href="index.html">Haunted Houses</a></li>
+            <li><a href="index.html">Scary Stories</a></li>
+        </ul>
+    </aside>
+</nav>
+<footer>
+    <p>&copy; 2015 MyStore</p>
+</footer>
 </body>
 </html>
