@@ -1,3 +1,6 @@
+<?php
+session_start();
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -40,16 +43,12 @@
         <h1 id="title">
             Please enter the following information.
         </h1>
-        <form name="email" action="subscribe.html" method="post">
-            <label for="firstname">First name:</label>
-            <input type="text" name="firstname" id="firstname" required autofocus><br>
-            <label for="lastname">Last name:</label>
-            <input type="text" name="lastname" id="lastname" required ><br>
+        <form name="email" action="../php/logged_in.php" method="post">
             <label for="email">Email:</label>
-            <input type="email" name="email" id="email" required ><br>
-            <label for="zipcode">Zipcode:</label>
-            <input type="text" name="zipcode" id="zipcode" placeholder="Optional but appreciated: 99999" pattern="\d{5}([\-]\d{4})?"><br>
-            <input type="submit" name="submit" id="button"  value="Subscribe">
+            <input type="email" name="email" id="email" placeholder="yourEmail@example.com" required ><br>
+            <label for="pass">Password:</label>
+            <input type="password" name="pass" id="pass" placeholder="Password" required><br>
+            <input type="submit" name="submit" id="button"  value="Log In">
 
         </form>
     </section>
